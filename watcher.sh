@@ -1,11 +1,11 @@
 #!/usr/bin/bash
 
-WATCHER:WriteEveryHour() {
+WATCHER:Write() {
   CONTENT="$(date)"
   echo "$CONTENT" >> ./target.txt
   git add .
   git commit -m "Update: $CONTENT"
-  sleep 1m
+  sleep 1s
 }
 
-WATCHER:WriteEveryHour &
+WATCHER:Write &
