@@ -6,7 +6,7 @@ WATCHER:Write() {
     echo "$CONTENT" >> ./target.txt
     git add .
     git commit -m "Update: $CONTENT"
-    sleep 0.01s
+    sleep 0.001s
   done
 }
 
