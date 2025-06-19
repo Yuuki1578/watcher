@@ -5,7 +5,7 @@ WATCHER:WriteEveryHour() {
   echo "$CONTENT" >> ./target.txt
   git add .
   git commit -m "Update: $CONTENT"
-  sleep 1h
+  sleep 1m
 }
 
 WATCHER:WriteEveryHour &
